@@ -1,0 +1,147 @@
+================================================================================
+🚀 ABHISHEK MANDAL - NEXT-GEN QA & PENETRATION TESTING PORTFOLIO BLUEPRINT
+================================================================================
+
+🎯 PRIMARY OBJECTIVE:
+Transform the portfolio from a standard resume template into a Tier-1, futuristic, 
+interactive Cybersecurity & QA Automation Engineer showcase with 3D Three.js visuals, 
+an interactive Security Terminal (CLI), glowing Bento Grids, and evidence-based labs.
+
+--------------------------------------------------------------------------------
+🏛️ 1. COMPLETE WEBSITE ARCHITECTURE & PAGE FLOW
+--------------------------------------------------------------------------------
+
+[ 01. NAVIGATION BAR (Futuristic Frosted Glass Bar) ]
+  ├── Brand Logo: "AM // Security & QA"
+  ├── Live Status Pill: "🟢 Available for QA & Pentest Roles"
+  ├── Smooth Scroll Links:
+  │    ├── //01. Home (Hero + 3D)
+  │    ├── //02. Terminal Lab (Live CLI Simulator)
+  │    ├── //03. About (Security Mindset & Persona)
+  │    ├── //04. Domains (Bento Grid Services)
+  │    ├── //05. Arsenal (Tech Stack & Security Tools)
+  │    ├── //06. Projects & Labs (Evidence-Backed Case Studies)
+  │    ├── //07. Experience (Timeline & Education)
+  │    └── //08. Contact (Direct Hire & Consultation)
+  └── Quick Actions: [ Download CV ] + [ ⚡ Launch Terminal ]
+
+[ 02. HERO SECTION (3D Interactive Cyber Matrix) ]
+  ├── Background: Three.js 3D Interactive Cyber Constellation / Neural Grid
+  │    └── Reacts smoothly to mouse cursor movements (Parallax 60fps)
+  ├── Live Decryption / Glitch Text: "Abhishek Mandal"
+  ├── Dynamic Cyber Typist: 
+  │    └── "QA Automation Engineer" ➔ "Penetration Tester" ➔ "Web App Security Analyst"
+  ├── Impact Headline: "Securing Digital Assets & Architecting Bulletproof Software Quality"
+  ├── Security Badge Pills:
+  │    ├── [ 🛡️ OWASP Top 10 Security ]
+  │    ├── [ ⚡ End-to-End QA Automation ]
+  │    ├── [ 🔍 REST API & Security Testing ]
+  │    └── [ 🐍 Python & Exploit Scripting ]
+  └── Primary CTAs:
+       ├── [ 🚀 Explore Security Labs ] ➔ Scrolls to Projects
+       ├── [ 💻 Run Live Security Scan ] ➔ Opens Terminal Simulator
+       └── [ 💬 Connect on WhatsApp / LinkedIn ]
+
+[ 03. INTERACTIVE CYBER CLI TERMINAL (AbhishekOS v2.6) ]
+  ├── Purpose: Lets technical recruiters, leads, and clients interact directly!
+  ├── UI: Modern macOS/Linux hybrid terminal with glowing scanlines
+  ├── Interactive Commands:
+  │    ├── `run-pentest`   ➔ Simulates live OWASP vulnerability audit (SQLi, XSS, IDOR found & remediated)
+  │    ├── `run-qa-suite`  ➔ Runs simulated Playwright/Selenium test runner (✓ 52 test scenarios passed)
+  │    ├── `whoami`        ➔ Outputs Abhishek's core engineering profile & philosophy
+  │    ├── `skills`        ➔ Prints formatted categorized security arsenal
+  │    ├── `download-cv`   ➔ Triggers Google Drive CV download
+  │    ├── `contact`       ➔ Displays direct email, WhatsApp & LinkedIn links
+  │    └── `clear` / `help`➔ Standard interactive terminal helpers
+  └── Quick Chip Buttons: Users can click pre-made chips without typing!
+
+[ 04. ABOUT ME & SECURITY MINDSET ]
+  ├── High-Tech Profile Card with Glowing Borders & Cyber Avatar
+  ├── Core Bio:
+  │    "Software Engineer specializing in Quality Assurance (QA) and Penetration Testing.
+  │     Passionate about identifying vulnerabilities before malicious actors do, automating
+  │     complex end-to-end test lifecycles, and ensuring high-performance web security."
+  ├── 3 Core Engineering Pillars:
+  │    1. 🛡️ Offensive Security (Vulnerability Assessment, OWASP Top 10, Network Recon)
+  │    2. ⚡ QA Automation (Selenium, Playwright, Cypress, CI/CD Integration, Postman API)
+  │    3. 🔍 Secure Code Analysis & Defect Lifecycle Management (Jira, Bug Reporting)
+
+[ 05. CORE DOMAINS & SPECIALIZATIONS (Modern Bento Grid Layout) ]
+  ├── Bento Card 1: Web Application Penetration Testing (VAPT)
+  │    └── Scope: Authentication bypass, Broken Object Level Auth (BOLA), XSS, SQLi, CSRF, SSRF
+  ├── Bento Card 2: QA & Test Automation Frameworks
+  │    └── Scope: Data-Driven & Page Object Model (POM) frameworks, Cross-browser testing, Allure reports
+  ├── Bento Card 3: API Testing & Security Hardening
+  │    └── Scope: Postman test automation, JWT token security, Rate limiting tests, Newman CI/CD runs
+  ├── Bento Card 4: Manual Testing & Defect Tracking
+  │    └── Scope: Smoke, Sanity, Regression, Boundary Value Analysis, Comprehensive Test Case Suites
+  └── Bento Card 5: Performance & Load Testing
+       └── Scope: Apache JMeter stress testing, response latency analysis, bottleneck diagnostics
+
+[ 06. SECURITY ARSENAL & TECH STACK (Interactive Category Filter) ]
+  ├── Security & Pentest Tools: Burp Suite Pro, OWASP ZAP, Nmap, Wireshark, SQLmap, Metasploit, Kali Linux
+  ├── QA Automation & Testing: Playwright, Selenium WebDriver, Cypress, Postman, Newman, JMeter, Allure
+  ├── Defect & Project Management: Jira, GitHub Issues, TestRail, Agile / Scrum Methodology
+  ├── Programming & Scripting: Python, JavaScript, Java, C++, Bash/Shell, SQL, HTML5/CSS3
+  └── DevOps & Infrastructure: Git, GitHub Actions, Linux Administration, Docker basics
+
+[ 07. FEATURED SECURITY LABS & QA PROJECTS ]
+  ├── Lab 1: Web Application Pentesting & Vulnerability Audit Report
+  │    ├── Tech: OWASP Top 10, Burp Suite, DVWA / Juice Shop
+  │    └── Details: Comprehensive security audit, proof-of-concept exploits, and developer fix guidance.
+  ├── Lab 2: Enterprise E2E Test Automation Framework
+  │    ├── Tech: Python / JavaScript, Playwright, GitHub Actions, Allure Report
+  │    └── Details: Page Object Model test suite covering 50+ critical business user workflows.
+  ├── Lab 3: Automated REST API Security & Performance Suite
+  │    ├── Tech: Postman, Newman, JMeter, CI/CD Integration
+  │    └── Details: Automated regression pipeline with auth token tampering and boundary tests.
+  └── Lab 4: Custom Python Recon & Port Security Scanner
+       ├── Tech: Python, Sockets, AsyncIO, Scapy
+       └── Details: Lightweight CLI utility for network reconnaissance and open-port vulnerability checking.
+
+[ 08. EXPERIENCE, ACHIEVEMENTS & EDUCATION ]
+  ├── Experience Timeline:
+  │    ├── 2024 - Present: QA & Content / Technical Specialist @ Whos Engineer
+  │    └── 2022 - Present: Freelance Security Researcher & Bug Hunter
+  ├── Education:
+  │    ├── 2022 - 2026: Bachelor of Technology in CSE @ SVIET (First Class Distinction)
+  │    └── 2020 - 2022: Higher Secondary (ISC) @ De Nobili School, CMRI
+  └── Verified Metrics:
+       ├── 🛡️ 100% OWASP Top 10 Scenario Coverage
+       ├── ⚡ 50+ Test Automation Workflows Engineered
+       └── 🎯 99.9% Defect Detection Accuracy
+
+[ 09. DIRECT CONTACT & SECURITY CONSULTATION ]
+  ├── Instant Contact Badges:
+  │    ├── 📍 Location: Dhanbad, Jharkhand, India
+  │    ├── 📞 Phone / WhatsApp: +91 834-033-1293
+  │    ├── 📧 Email: abhishekmandaal669@gmail.com
+  │    └── 💼 LinkedIn: https://www.linkedin.com/in/abhishek-mandal-a9b714214/
+  │    └── 🐙 GitHub: https://github.com/abhishekmandal669
+  └── Direct Web3Forms Contact Form (Instant message to email inbox)
+
+[ 10. FUTURISTIC FOOTER ]
+  ├── Security Badge: "Built with Cyber Obsidian UI & Three.js"
+  ├── Copyright & Quick Back-to-Top trigger
+
+--------------------------------------------------------------------------------
+⚙️ 2. STEP-BY-STEP IMPLEMENTATION ROADMAP
+--------------------------------------------------------------------------------
+Step 1: Backup & Structure Setup
+  - Clean up dependencies, integrate lightweight Three.js, Lucide/Remix icons, and Google Fonts (JetBrains Mono + Inter/Poppins).
+
+Step 2: Build the Three.js 3D Cyber Constellation Engine
+  - Create a lightweight, high-performance WebGL canvas for the background with mouse-interactive glowing nodes.
+
+Step 3: Develop the Core UI & Cyber Obsidian Glassmorphism System
+  - Design the Bento Grid, spotlight hover animations, and clean responsive CSS tokens.
+
+Step 4: Implement Interactive Security Terminal (AbhishekOS)
+  - Write modular JavaScript for command evaluation, live simulated scans, animated test pass outputs, and quick-click command chips.
+
+Step 5: Assemble and Polish Content
+  - Populate high-quality QA & Pentest projects, arsenal, experience timeline, and working contact form.
+
+Step 6: Final Testing & Verification
+  - Check full responsiveness across Mobile, Tablet, and Desktop; verify 60fps performance and all outbound links.
+================================================================================

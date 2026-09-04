@@ -1,0 +1,173 @@
+================================================================================
+📌 MASTER PROFILE DETAILS & RESUME CONSOLIDATION
+================================================================================
+Candidate: ABHISHEK KUMAR MANDAL
+Domain: QA Software Testing Engineer | Test Automation | Penetration Testing & Cybersecurity
+Location: Dhanbad, Jharkhand, India
+Phone / WhatsApp: +91 8340331293
+Email: abhishekmandal669@gmail.com
+LinkedIn: https://linkedin.com/in/abhishek-mandal-a9b714214
+GitHub: https://github.com/abhishekmandal669
+
+--------------------------------------------------------------------------------
+🎯 1. PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------------
+Detail-oriented and proactive QA Software Testing & Cybersecurity Engineer with hands-on
+experience spanning manual testing, automation testing, API testing, and penetration testing
+across modern web and Windows desktop platforms.
+
+Proficient in designing and executing end-to-end test cases, Selenium with Java and TestNG
+for automated smoke and regression suites, Postman for API validation, and Burp Suite for
+OWASP Top 10 vulnerability assessments. Experienced in Windows native ecosystem validation
+(Registry checks, Event Viewer logs, shell extensions, installer packages) and evaluating
+network security architectures, patch management, and intrusion detection.
+
+--------------------------------------------------------------------------------
+🧰 2. CONSOLIDATED TECHNICAL & DOMAIN SKILLS
+--------------------------------------------------------------------------------
+A. Core QA & Testing Methodologies:
+   • Manual Testing, Functional Testing, Regression Testing, Smoke & Sanity Testing
+   • Test Case Design, Test Scenario Mapping, Test Execution & Test Planning
+   • Defect Tracking, Bug Life Cycle, Software Testing Life Cycle (STLC), SDLC (Agile/Scrum)
+   • Windows Desktop Application Testing & Installer/Uninstaller Verification
+   • Windows Registry Validation, Event Viewer Log Analysis, Task Manager Performance Metrics
+   • Cross-Platform & UI Compatibility Testing (Windows 10/11 Snap Layouts, System Tray, Context Menus)
+
+B. Automation Testing:
+   • Playwright with JavaScript (Modern E2E Web & API Automation)
+   • Selenium WebDriver with Java
+   • TestNG Framework, Page Object Model (POM)
+   • Automation Test Script Development & Regression Suite Execution
+   • Automated Smoke Testing for Web Login Portals & Core Workflows
+   • Build Tools: Maven
+
+C. Penetration Testing & Cybersecurity:
+   • OWASP Top 10 Vulnerability Assessment (SQLi, XSS, IDOR, Broken Auth, CSRF, SSRF)
+   • Burp Suite (Proxy, Repeater, Intruder, Vulnerability Scanning)
+   • Network Security Fundamentals (TCP/IP, Firewalls, Routers, Switches)
+   • Network Reconnaissance & Port Scanning (Nmap, Wireshark)
+   • Intrusion Detection Systems (IDS/IPS) & Physical Security Surveys
+   • Security Patch Validation & Workstation/Server Backup Image Recovery
+   • Standards Awareness: IEC 62443 / IEEE 1686, SCADA & HVDC Cyber Security Fundamentals
+
+D. API & Database Testing:
+   • Postman (API Functional, Negative & Security Testing, Collections, Environment Variables)
+   • RESTful API Endpoints Verification (v1.1, CRUD workflows, Status Codes, Auth Tokens)
+   • SQL Querying for Backend Database Validation & Data Integrity
+
+E. Programming & Scripting Languages:
+   • Java (Core OOP, Test Automation)
+   • Python (Scripting & Automation)
+   • SQL (Database Queries & Data Validation)
+   • Basic C/C++ (Systems concepts)
+   • HTML5, CSS3, JavaScript (Frontend understanding for UI/DOM testing)
+
+F. Tools & Platforms:
+   • JIRA (Defect Tracking & Agile Sprint Management)
+   • Postman (API Testing & Monitoring)
+   • Burp Suite Professional / Community (Web App Pentesting)
+   • Wireshark & Nmap (Network packet inspection & scanning)
+   • Git & GitHub (Version Control & Repositories)
+   • MS Excel & MS Word (Advanced QA Test Logs, Audit Documentation & Reports)
+
+--------------------------------------------------------------------------------
+💼 3. PROFESSIONAL EXPERIENCE
+--------------------------------------------------------------------------------
+1. QA Software Testing Engineer (Full-Time)
+   Company: Oriental Outsourcing Consultant Private Limited | India
+   Duration: Aug 2026 – Present
+   Key Responsibilities & Achievements:
+   • Conducted end-to-end manual and automation testing on 15+ web and Windows desktop
+     application builds to validate functionality, UI usability, and OS stability.
+   • Developed and maintained automated test scripts using Selenium with Java and TestNG for
+     critical web login portals, reducing manual regression testing effort by ~30%.
+   • Tested 10+ desktop installer packages to ensure clean installation, correct Windows
+     Registry key entries, and flawless uninstallation cleanups without orphaned artifacts.
+   • Analyzed Windows Event Viewer logs and Task Manager metrics across 20+ troubleshooting
+     sessions to isolate background process crashes, memory leaks, and application freezes.
+   • Validated Windows 11 compatibility across 5+ builds, verifying shell extension context
+     menus, system tray notifications, and native snap layouts.
+   • Executed 50+ structured functional, regression, smoke, and sanity test cases per release,
+     logging and tracking 80+ defects accurately in JIRA.
+   • Handled API testing on 20+ endpoints using Postman, ran SQL queries for backend data
+     verification, and conducted basic vulnerability audits referencing OWASP Top 10 with Burp Suite.
+   • Collaborated closely with development teams to reproduce 40+ complex bugs, verify hotfixes,
+     and confirm performance benchmarks.
+
+2. QA Software Testing Intern
+   Company: Oriental Outsourcing Consultant Private Limited | India
+   Duration: Dec 2025 – Jul 2026 (8 Months)
+   Key Responsibilities & Achievements:
+   • Assisted in manual testing of 10+ web and Windows desktop application builds, mastering
+     the STLC and bug life cycle processes under senior QA leadership.
+   • Authored and executed 30+ test cases across functional and regression test cycles, logging
+     defects in JIRA with comprehensive reproduction steps and logs.
+   • Learned automation testing fundamentals with Selenium, Java, and TestNG, contributing
+     to early automated smoke test suites.
+   • Conducted preliminary penetration testing and security checks using Burp Suite and Postman
+     for OWASP Top 10 vulnerabilities.
+   • Performed installation/uninstallation testing and Windows Registry verification on 8+ builds.
+
+--------------------------------------------------------------------------------
+🔬 4. FEATURED PROJECTS & EVIDENCE-BASED CASE STUDIES
+--------------------------------------------------------------------------------
+PROJECT 1: Justo Delivery — Logistics & Transportation Management Platform (QA & Security)
+• Tech Stack: PHP 8.2+, Laravel 12+, Vue 3 with Inertia, Vite, RESTful API v1.1, Postman, Burp Suite, JIRA
+• Description & Impact:
+  - Performed comprehensive manual and functional testing of a multi-role logistics and dispatch
+    platform covering quote generation, order processing, warehouse management, and delivery workflows.
+  - Executed API testing on 15+ endpoints with Postman, validating secure credential-based auth,
+    request payloads, and end-to-end shipment lifecycle.
+  - Ran regression and smoke tests across 8+ deployment cycles on Laravel backend and Vue 3 frontend.
+  - Executed security testing with Burp Suite against OWASP Top 10 guidelines on authentication flows.
+  - Logged and managed 25+ defects in JIRA across dispatch anomalies, API errors, and UI glitches.
+
+PROJECT 2: SCADA & Industrial Platform Security & Vulnerability Assessment
+• Tech Stack: Burp Suite, OWASP Top 10, Nmap, Wireshark, SQL, Windows Registry, MS Excel, JIRA
+• Description & Impact:
+  - Assessed security controls, network access workflows, and system parameters for an industrial
+    logistics and SCADA management environment.
+  - Conducted penetration tests with Burp Suite to identify unencrypted API endpoints, unauthorized
+    access hooks, and backdoor risks.
+  - Validated SQL database queries and verified system backup and recovery scripts to ensure
+    fail-safe operational continuity.
+  - Documented 25+ security findings and remediation suggestions in JIRA for engineering teams.
+
+PROJECT 3: Selenium Java & TestNG Web Test Automation Suite
+• Tech Stack: Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM), Allure Reporting
+• Description & Impact:
+  - Built an automated end-to-end testing suite for web authentication and multi-step workflows.
+  - Implemented Page Object Model (POM) for maximum test script reusability and maintainability.
+  - Automated smoke testing reducing release validation turnaround time by 30%.
+
+PROJECT 4: REST API Security & Automation Testing Framework
+• Tech Stack: Postman, Newman, JavaScript, JSON Schema Validation, OAuth 2.0 / JWT
+• Description & Impact:
+  - Designed automated Postman test suites validating API status codes, response times, headers,
+    and schema structure across 20+ endpoints.
+  - Integrated security test assertions for broken object-level authorization (BOLA) and token tampering.
+
+--------------------------------------------------------------------------------
+🎓 5. EDUCATION & CERTIFICATIONS
+--------------------------------------------------------------------------------
+A. Education:
+   • Bachelor of Technology (B.Tech) in Computer Science & Engineering
+     Institution: Swami Vivekanand Institute of Engineering and Technology (SVIET)
+     CGPA: 8.5 | First Class Distinction | Expected: 2026
+   • Higher Secondary (ISC)
+     Institution: De Nobili School, CMRI (Dhanbad) | First Class Distinction | 2020 – 2022
+
+B. Certifications:
+   • Automation Testing — GeeksforGeeks (GfG)
+   • Cybersecurity Certification — Tutedude (In Progress)
+
+--------------------------------------------------------------------------------
+💡 6. PORTFOLIO KEY METRICS & TRUST SIGNALS
+--------------------------------------------------------------------------------
+• 15+ Web & Desktop Builds Tested
+• 80+ Bugs & Security Anomalies Logged in JIRA
+• 30% Reduction in Manual Regression via Selenium Automation
+• 20+ API Endpoints Tested & Validated
+• 100% OWASP Top 10 Vulnerability Audit Coverage
+• 8.5 CGPA in B.Tech Computer Science & Engineering
+================================================================================

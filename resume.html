@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Kumar Mandal - Resume (QA & Penetration Testing)</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', Calibri, Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #222;
+      background: #f1f5f9;
+      padding: 2rem 0;
+    }
+
+    .resume-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px 48px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+
+    /* Floating Action Bar */
+    .print-bar {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #0f172a;
+      padding: 0.75rem 1.25rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      gap: 0.75rem;
+      z-index: 1000;
+    }
+
+    .print-btn {
+      background: #00f2ff;
+      color: #0f172a;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .print-btn:hover {
+      background: #38bdf8;
+      transform: translateY(-2px);
+    }
+
+    .back-btn {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #475569;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .name {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #2b3a4a;
+      margin-bottom: 6px;
+    }
+
+    .contact-info {
+      font-size: 9.5pt;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .contact-info a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    .divider {
+      border: 0;
+      border-top: 1.5px solid #111;
+      margin: 12px 0 14px 0;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-heading {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #111;
+      border-bottom: 1px solid #222;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 6px;
+    }
+
+    /* Skills Grid */
+    .skill-category {
+      margin-bottom: 4px;
+    }
+
+    .skill-category strong {
+      color: #111;
+    }
+
+    /* Experience & Projects */
+    .job-header, .edu-header, .proj-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .job-title, .edu-degree, .proj-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #111;
+    }
+
+    .job-date, .edu-date {
+      font-weight: 700;
+      font-size: 9.5pt;
+      color: #111;
+      white-space: nowrap;
+    }
+
+    .job-company, .edu-school {
+      font-style: italic;
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+
+    li {
+      margin-bottom: 3px;
+      text-align: justify;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .resume-container {
+        padding: 24px 28px;
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      .print-bar {
+        display: none !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: #111;
+      }
+
+      @page {
+        margin: 10mm 12mm;
+        size: A4;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print/PDF Bar -->
+  <div class="print-bar">
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+  </div>
+
+  <div class="resume-container">
+    
+    <!-- Header -->
+    <header class="header">
+      <h1 class="name">Abhishek Kumar Mandal</h1>
+      <div class="title">QA Software Testing Engineer | Test Automation | Penetration Testing</div>
+      <div class="contact-info">
+        <span>+91 8340331293</span> | 
+        <span><a href="mailto:abhishekmandal669@gmail.com">abhishekmandal669@gmail.com</a></span> | 
+        <span>Dhanbad, Jharkhand, India</span> | 
+        <span><a href="https://linkedin.com/in/abhishek-mandal-a9b714214" target="_blank">linkedin.com/in/abhishek-mandal-a9b714214</a></span> | 
+        <span><a href="https://github.com/abhishekmandal669" target="_blank">github.com/abhishekmandal669</a></span>
+      </div>
+    </header>
+
+    <hr class="divider">
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-heading">Professional Summary</h2>
+      <p>
+        Detail-oriented QA Software Testing & Cybersecurity Engineer with hands-on experience spanning manual testing, automation testing, API testing, and penetration testing across web and Windows desktop applications. Proficient in executing test cases for desktop clients, including installation validation, Windows Registry checks, and Event Viewer log analysis. Working knowledge of Selenium with Java and TestNG for test automation and OWASP Top 10 concepts with Burp Suite for vulnerability and security testing. Strong understanding of STLC and the bug life cycle, with a focus on cross-platform compatibility (Windows 10/11) and native OS integrations.
+      </p>
+    </section>
+
+    <!-- Core Skills -->
+    <section class="section">
+      <h2 class="section-heading">Core Skills</h2>
+      <p>
+        Manual Testing, Automation Testing, Functional Testing, Regression Testing, Smoke & Sanity Testing, Test Case Design & Execution, Defect Tracking, Bug Life Cycle, STLC, SDLC (Agile/Scrum), API Testing, Windows Desktop Application Testing, Windows Registry Validation, Event Viewer Log Analysis, Cross-Platform Testing, JIRA, Postman, SQL, Penetration Testing, OWASP Top 10, Burp Suite, Vulnerability Assessment, Network Security Basics.
+      </p>
+    </section>
+
+    <!-- Technical Skills Breakdown -->
+    <section class="section">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skill-category">
+        <strong>Core Testing:</strong> Manual Testing, Functional Testing, Regression Testing, Smoke & Sanity Testing, Test Case Design & Execution, Boundary Value Analysis.
+      </div>
+      <div class="skill-category">
+        <strong>Automation Testing:</strong> Playwright with JavaScript, Selenium WebDriver with Java, TestNG Framework, Page Object Model (POM), Smoke Test Automation, Build Tools (Maven).
+      </div>
+      <div class="skill-category">
+        <strong>Penetration Testing & Security:</strong> OWASP Top 10, Burp Suite (Proxy, Repeater, Intruder), Vulnerability Assessment, Port Scanning (Nmap), Wireshark, SCADA & Network Security Fundamentals.
+      </div>
+      <div class="skill-category">
+        <strong>Windows Ecosystem:</strong> Windows Registry Validation, Event Viewer Logs, Shell Extensions & Context Menus, Installation/Uninstallation Testing, Windows 10/11 UI Compatibility (Snap Layouts, System Tray).
+      </div>
+      <div class="skill-category">
+        <strong>Tools & Technologies:</strong> JIRA (Defect Tracking), Postman (API Testing), Git & GitHub, MS Excel, Google Drive, VS Code.
+      </div>
+      <div class="skill-category">
+        <strong>Database & Languages:</strong> SQL (Data Validation), Java, Python, Basic C/C++, HTML5, CSS3, JavaScript.
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-heading">Certifications</h2>
+      <ul>
+        <li><strong>Automation Testing</strong> — GeeksforGeeks (GfG)</li>
+        <li><strong>Cybersecurity</strong> — Tutedude (In Progress)</li>
+      </ul>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+      <h2 class="section-heading">Professional Experience</h2>
+      
+      <div class="job-header">
+        <span class="job-title">QA Software Testing Engineer (Full-Time)</span>
+        <span class="job-date">Aug 2026 – Present</span>
+      </div>
+      <div class="job-company">Oriental Outsourcing Consultant Private Limited | India</div>
+      <ul>
+        <li>Carried out end-to-end manual and automation testing on 15+ web and Windows desktop application builds to validate functionality, usability, and native OS stability.</li>
+        <li>Developed and implemented automation test scripts using Selenium with Java and TestNG for smoke testing of primary web login portals, reducing repetitive manual regression effort by approximately 30%.</li>
+        <li>Tested 10+ desktop installer packages to ensure clean installation, proper registry entries generation, and flawless uninstallation cleanups.</li>
+        <li>Analyzed Windows Event Viewer logs and Task Manager metrics across 20+ troubleshooting sessions to trace background process errors, memory leaks, and application freezes.</li>
+        <li>Conducted cross-version UI testing targeting Windows 11 updates, validating system tray notifications, taskbar behaviors, and shell extension menu context hooks across 5+ builds.</li>
+        <li>Ran 50+ structured functional, regression, smoke, and sanity test cases per release cycle, documenting and tracking 80+ defects accurately using JIRA.</li>
+        <li>Handled API testing on 20+ endpoints using Postman, utilized SQL queries for backend data validation, and applied OWASP Top 10 concepts with Burp Suite for vulnerability and penetration testing checks.</li>
+        <li>Collaborated closely with developers to reproduce 40+ complex bugs, verify hotfixes, and optimize application performance.</li>
+      </ul>
+
+      <div class="job-header" style="margin-top: 10px;">
+        <span class="job-title">QA Software Testing Intern</span>
+        <span class="job-date">Dec 2025 – Jul 2026 (8 Months)</span>
+      </div>
+      <div class="job-company">Oriental Outsourcing Consultant Private Limited | India</div>
+      <ul>
+        <li>Assisted in manual testing of 10+ web and Windows desktop application builds, mastering STLC and bug life cycle processes under senior QA guidance.</li>
+        <li>Gained hands-on exposure to test case design, execution, and defect logging in JIRA, contributing to 30+ test cases across functional and regression test cycles.</li>
+        <li>Learned automation testing fundamentals with Selenium and Java, and TestNG, supporting the transition into automation test scripting.</li>
+        <li>Introduced to basic penetration testing concepts, including OWASP Top 10 vulnerabilities and Burp Suite, while assisting in preliminary security checks.</li>
+        <li>Supported installation/uninstallation testing and Windows Registry validation for 8+ desktop application builds.</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2 class="section-heading">Projects & Security Labs</h2>
+
+      <div class="proj-header">
+        <span class="proj-title">Justo Delivery — Logistics & Transportation Management Platform</span>
+      </div>
+      <div class="job-company">Tech Stack: PHP 8.2+, Laravel 12+, Vue 3 with Inertia, Vite, RESTful Third-Party API (v1.1), Postman, Burp Suite, JIRA</div>
+      <ul>
+        <li>Handled manual and functional testing of a logistics and transportation management platform covering quote generation, order creation, warehouse management, dispatch, and delivery workflows across 3 user roles.</li>
+        <li>Completed API testing on 15+ endpoints using Postman for the platform's RESTful third-party API (v1.1), validating secure API credential-based authentication and end-to-end shipment order creation and management.</li>
+        <li>Conducted regression and smoke testing across backend (PHP/Laravel) and frontend (Vue 3/Vite) releases spanning 8+ deployment cycles to ensure stability during feature updates.</li>
+        <li>Ran security and penetration testing checks on API credential handling and authentication flows using Burp Suite, referencing OWASP Top 10 guidelines to flag potential vulnerabilities.</li>
+        <li>Logged and tracked 25+ defects related to order/dispatch workflow anomalies, API integration errors, and UI inconsistencies using JIRA, collaborating with developers on fixes.</li>
+      </ul>
+
+      <div class="proj-header" style="margin-top: 8px;">
+        <span class="proj-title">SCADA & Industrial Platform Security Assessment</span>
+      </div>
+      <div class="job-company">Tech Stack: Burp Suite, OWASP Top 10, Nmap, Wireshark, SQL, Windows Registry, MS Excel, JIRA</div>
+      <ul>
+        <li>Evaluated security parameters and network access workflows for a multi-role industrial logistics and dispatch management platform.</li>
+        <li>Executed penetration testing using Burp Suite to identify unencrypted API endpoints, unauthorized access hooks, and potential security backdoors.</li>
+        <li>Validated system database queries using SQL and verified image recovery and backup scripts to ensure data integrity during system failures.</li>
+        <li>Documented 25+ security vulnerabilities and system anomalies in JIRA, recommending patch deployments and network hardening steps.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-heading">Education</h2>
+      <div class="edu-header">
+        <span class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science & Engineering</span>
+        <span class="edu-date">Expected 2026</span>
+      </div>
+      <div class="edu-school">Swami Vivekanand Institute of Engineering and Technology (SVIET) | <strong>CGPA: 8.5 (First Class Distinction)</strong></div>
+
+      <div class="edu-header" style="margin-top: 6px;">
+        <span class="edu-degree">Higher Secondary School (ISC)</span>
+        <span class="edu-date">2020 – 2022</span>
+      </div>
+      <div class="edu-school">DE Nobili School, CMRI (Dhanbad) | <strong>First Class Distinction</strong></div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="section">
+      <h2 class="section-heading">Additional Information</h2>
+      <ul>
+        <li><strong>Strong Analytical & Troubleshooting Skills:</strong> Sharp attention to detail in bug reproduction and log isolation.</li>
+        <li><strong>Standards Awareness:</strong> Knowledge of IEEE / IEC standards for telecommunications and sub-station automation security.</li>
+        <li><strong>Documentation & Reporting:</strong> Advanced proficiency in technical documentation, test summary logs, and JIRA audit reporting.</li>
+        <li><strong>Personal Competencies:</strong> Quick learner who adapts rapidly to new technical tools, OS configurations, automation frameworks, and penetration testing tools.</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>

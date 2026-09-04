@@ -1,648 +1,855 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Abhishek Mandal Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Kumar Mandal | QA Automation & Penetration Testing Engineer</title>
+  <meta name="description"
+    content="Portfolio of Abhishek Kumar Mandal - QA Software Testing Engineer specializing in Test Automation (Selenium, Java, TestNG), Web App Penetration Testing (OWASP Top 10, Burp Suite), and API Security.">
+  <meta name="keywords"
+    content="QA Engineer, Penetration Tester, Cybersecurity, Software Testing, Selenium Java, TestNG, Burp Suite, OWASP Top 10, Postman, JIRA, Abhishek Mandal">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <!-- Custom Cyber Obsidian Design System -->
+  <link rel="stylesheet" href="css/cyber-style.css">
+</head>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+<body>
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Three.js 3D Cyber Particle Background -->
+  <canvas id="cyber-canvas"></canvas>
 
-    <style>
-      /*======================================
-//--//-->   ABOUT
-======================================*/
+  <div class="app-container">
 
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+    <!-- ==========================================
+         NAVIGATION BAR
+         ========================================== -->
+    <header>
+      <nav class="cyber-nav">
+        <a href="#home" class="nav-brand">
+          <span class="brand-badge"><i class="fa-solid fa-shield-halved"></i> AM//SEC</span>
+          <span>Abhishek.dev</span>
+        </a>
 
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
+        <ul class="nav-links">
+          <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#terminal"><i class="fa-solid fa-terminal"></i> CLI Lab</a></li>
+          <li><a href="#domains"><i class="fa-solid fa-cubes"></i> Domains</a></li>
+          <li><a href="#arsenal"><i class="fa-solid fa-toolbox"></i> Arsenal</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-flask-vial"></i> Projects</a></li>
+          <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
 
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
+        <div class="nav-actions">
+          <a href="Abhishek_Mandal_QA_Updated_Resume.pdf" target="_blank"
+            class="cyber-btn btn-outline">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-      .skill-mf .progress {
-        /* background-color: #cde1f8; */
-        margin: 0.5rem 0 1.2rem;
-        border-radius: 0;
-        height: 0.7rem;
-      }
-
-      .skill-mf .progress .progress-bar {
-        height: 0.7rem;
-        background-color: #ffbd39;
-      }
-
-      /* Animation styles */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
-
-      #typing-animation:before {
-        content: "";
-        /* position: absolute; */
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #ccc;
-        animation: typing-cursor 0.5s ease-in-out infinite;
-      }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-
-        to {
-          width: 100%;
-        }
-      }
-
-      @keyframes typing-cursor {
-        from {
-          width: 5px;
-        }
-
-        to {
-          width: 0;
-        }
-      }
-
-      /* project image zoom effect */
-
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
-
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
-
-      @media screen and (orientation: portrait) {
-        body {
-          margin-left: 5%;
-          margin-right: 5%;
-        }
-
-        .order-md-last {
-          visibility: hidden;
-        }
-
-        .about-img img {
-          content: url("images/me.png");
-        }
-      }
-    </style>
-
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="home" class="hero-section">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Abhishek Mandal</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span>
-          Menu
-        </button>
+        <div class="hero-grid">
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link">
-                <span>Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link">
-                <span>About</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume-section" class="nav-link">
-                <span>Resume</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link">
-                <span>Contact</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#send-message" class="nav-link">
-                <span>Message me</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="home-section" class="hero">
-      <div class="home-slider  owl-carousel">
-        <div class="slider-item ">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images//file\ copy.png);">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm
-                    <span>Abhishek MAndal</span></h1>
-
-                  <!-- Element to contain animated typing -->
-                  <span id="typing-animation"></span>
-
-                  <script>
-                    // Initialize the typing animation
-                    const typingAnimationElement = document.getElementById('typing-animation');
-
-                    // Create an array of typing text
-                    const typingTexts = ['Software Developer     ', 'Freelancer Artist     ', 'Video Editor    '];
-
-                    // Create a function to display the typing animation for a given text
-                    function playTypingAnimation(text) {
-                      // Loop through each character and add it to the element
-                      for (let i = 0; i < text.length; i++) {
-                        setTimeout(() => {
-                          typingAnimationElement.textContent += text[i];
-                        }, i * 100); // Decreased delay to speed up the typing animation
-                      }
-
-                      // Once the animation is complete, reset the text and start over
-                      setTimeout(() => {
-                        typingAnimationElement.textContent = '';
-                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                      }, text.length * 100); // Adjusted delay accordingly
-                    }
-
-                    // Start the typing animation loop
-                    playTypingAnimation(typingTexts[0]);
-                  </script><br><br>
-                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                  <!-- <br> -->
-                  <p>
-                    <a href="https://wa.me/8340331293" class="btn btn-primary py-3 px-4">Hire me</a>
-                    <a href="https://www.linkedin.com/in/abhishek-mandal-a9b714214/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row">
-          <div class="row d-flex align-items-stretch">
-            <!-- <div class="row d-flex"> -->
-            <div class="col-md-6 col-lg-5 d-flex">
-              <div class="img-about img d-flex align-items-stretch">
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="images//WhatsApp_Image_2024-08-15_at_12.14.42_35817330-removebg-preview (1).png" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <!-- Details next to profile image -->
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name:
-                          </span>
-                          <span>Abhishek Mandal</span></p>
-                        <p>
-                          <span class="title-s">Job Role:
-                          </span>
-                          <span>Graphic designer</span></p>
-                        <p>
-                          <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
-                          <span class="title-s">Address:
-                          </span>
-                          <span>Dhanbad , Jharkhand</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>Adobe Photoshop</span>
-                    <!-- <span class="pull-right">85%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>Front-End</span>
-                    <!-- <span class="pull-right">95%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>PYTHON</span>
-                    <!-- <span class="pull-right">85%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>Java</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>Javascript</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>C++</span>
-                    <!-- <span class="pull-right">99%</span> -->
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for QA & Pentest Engagements</span>
             </div>
 
-            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
+            <h1 class="hero-title">
+              Securing Systems & Architecting <span class="name-highlight">Bulletproof Quality</span>
+            </h1>
 
-                  <h1 class="big">About</h1>
-                  <h2 class="mb-4">About Me</h2>
-
-                  <p>Adobe ColdFusion developer at Arosys Technologies, proficient in PHP, jQuery AJAX, and skilled in crafting visually appealing webpages using HTML, CSS, Tailwind, Bootstrap, and Material UI. Well-versed in Python, C++, C, and Java, with a solid foundation in SQL. Eager to contribute to innovative web development projects.</p>
-                  <ul class="about-info mt-4 px-md-0 px-2">
-                    <li class="d-flex">
-                      <span>Profile:</span>
-                      <span>Front-end Developer &amp; Graphic designer</span></li>
-                    <li class="d-flex">
-                      <span>Domain:</span>
-                      <span>Software Developement</span></li>
-                    <li class="d-flex">
-                      <span>Education:</span>
-                      <span>Bachelor of Computer Science and Engineering</span></li>
-                    <li class="d-flex">
-                      <span>Language:</span>
-                      <span>English, Hindi, Bengali</span></li>
-                    <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-                    <li class="d-flex">
-                      <span>Other Skills:</span>
-                      <span>
-                        Drawing proficiency, Observational skills, Creativity, Knowledge of art fundamentals, Technical proficiency, Communication skills, Time management, Adaptability &amp; Attention to detail</span></li>
-                    <li class="d-flex">
-                      <span>Interest:</span>
-                      <span>Traveling, Travel Photography, Teaching, Editing</span></li>
-
-                  </ul>
-                </div>
-              </div>
-
-              <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                <div class="text">
-                  <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
-                  <p>
-                    <a href="https://www.linkedin.com/in/abhishek-mandal-a9b714214/" class="btn btn-primary py-3 px-3">LinkedIn</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Experienced Frontend Developer and Graphic designer , proficient in Adobe Photoshop and skilled in Canva ,Figma . Specialized in crafting visually appealing webpages using HTML, CSS, Tailwind, Bootstrap. Possesses a strong foundation in Python, C++, C, and Java, with some basic knowlwdge in SQL. Eager to apply expertise to drive innovative web development projects forward.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <h1 class="big-4">Experience</h1>
-          <div class="underline"></div>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2024-Present</span>
-              <h2>Instagram Post & Video Handler</h2>
-              <span class="position">Whos Engineer</span>
-              <p class="mt-4">Made the instagram post and ensures timely submition of the posts on Instagram.
-                <ul>
-                  <li>Utilized advanced graphic design tools and video editing software to produce eye-catching Instagram posts and videos, boosting engagement by 25%.</li>
-                  <li>Led the creation and execution of three distinct content campaigns, employing data-driven insights to ensure timely delivery and a 20% increase in follower interaction.</li>
-                  <!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
-                </ul>
-              </p>
+            <div class="typing-wrapper">
+              <span class="text-cyan font-mono">></span>
+              <span id="cyber-typist"></span>
+              <span class="typing-cursor"></span>
             </div>
 
-          </div>
-
-          <!-- <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2021-Present</span>
-              <h2>Freelancer Sketch Artist</h2>
-              <span class="position">ig/anurag.sketches</span>
-              <p class="mt-4">Freelance artist specializing in paid graphite and charcoal portraits. Self-taught and experienced in creating custom artwork. Find my portfolio on Instagram - @anurag.sketches
-                <ul>
-                  <li>Researching market trends to meet client demands.</li>
-                  <li>Offering personalized art workshops for aspiring artists.</li>
-                  <li>Collaborating with galleries to showcase my work.</li>
-
-                </ul>
-              </p>
-            </div>
-
-          </div> -->
-        </div>
-
-        <br>
-        <br>
-
-        <div class="row">
-          <h1 class="big-4">Education</h1>
-          <div class="underline"></div>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2022-2026</span>
-              <h2>Bachelor in CSE</h2>
-              <span class="position">SVIET (Chandigarh,Punjab)</span>
-              <p class="mt-4">Grade: First class distinction.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2020-2022</span>
-              <h2>Higher Secondary School</h2>
-              <span class="position">DE Nobili School ,CMRI (ISC)</span>
-              <p class="mt-4">Grade: First class distinction.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center ftco-animate">
-            <p>
-              <a href="https://drive.google.com/file/d/13uqiaZ_Hxr5PibEDy0gb1onXkemn2uw7/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a>
+            <p class="hero-desc">
+              Detail-oriented QA Software Testing & Cybersecurity Engineer at <strong>Oriental Outsourcing Consultant
+                Pvt Ltd</strong>. Specializing in manual/automation testing (Selenium Java, TestNG), REST API
+              validation, Windows desktop application verification, and OWASP Top 10 penetration testing with Burp
+              Suite.
             </p>
+
+            <div class="hero-tags">
+              <span class="hero-tag"><i class="fa-solid fa-bug"></i> Test Automation</span>
+              <span class="hero-tag"><i class="fa-solid fa-masks-theater"></i> Playwright + JS</span>
+              <span class="hero-tag"><i class="fa-solid fa-shield-virus"></i> OWASP Top 10</span>
+              <span class="hero-tag"><i class="fa-solid fa-network-wired"></i> API Security</span>
+              <span class="hero-tag"><i class="fa-brands fa-windows"></i> Windows Ecosystem</span>
+              <span class="hero-tag"><i class="fa-solid fa-code"></i> Selenium + Java</span>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#terminal" class="cyber-btn btn-cyan">
+                <i class="fa-solid fa-play"></i> Launch Terminal CLI
+              </a>
+              <a href="#projects" class="cyber-btn btn-emerald">
+                <i class="fa-solid fa-microscope"></i> View Security Labs
+              </a>
+              <a href="https://wa.me/8340331293" target="_blank" class="cyber-btn btn-outline">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
           </div>
+
+          <!-- Hero Avatar & Badges -->
+          <div class="hero-visual">
+            <div class="floating-stat stat-1">
+              <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="stat-text">
+                <strong>15+ Builds</strong>
+                <span>Tested & Validated</span>
+              </div>
+            </div>
+
+            <div class="avatar-card">
+              <div class="avatar-img-wrapper">
+                <img src="images/abhishek_profile.jpg" alt="Abhishek Kumar Mandal - QA & Penetration Testing Engineer">
+              </div>
+              <div class="avatar-meta">
+                <div class="avatar-meta-title">
+                  <h3>Abhishek Kumar Mandal</h3>
+                  <span class="avatar-badge">B.Tech CSE (8.5 CGPA)</span>
+                </div>
+                <p>QA Engineer & Cybersecurity Researcher</p>
+              </div>
+            </div>
+
+            <div class="floating-stat stat-2">
+              <div class="stat-icon"><i class="fa-solid fa-bug-slash"></i></div>
+              <div class="stat-text">
+                <strong>80+ Defects</strong>
+                <span>Tracked in JIRA</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="hid" style="visibility:hidden">
-        <div class="container">
-          <div class="row d-md-flex align-items-center">
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="20">0</strong>
-                  <span>Achievements</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="50">0</strong>
-                  <span>Artworks</span>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-        <!-- <div class="container"> -->
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>Here's my<span>
-                <a id="gitbtn" class="btn btn-primary py-3 px-5" href="https://github.com/abhishekmandal669?tab=repositories">Github</a>
-              </span>
-            </h2>
-            <div class="heading">
-              <h4>
-                I love to code &amp; create awesome artworks.
-              </h4>
-              <br>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <!-- ==========================================
+         INTERACTIVE CLI TERMINAL (AbhishekOS v2.6)
+         ========================================== -->
+    <section id="terminal" class="terminal-section">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-terminal"></i> INTERACTIVE CLI ENGINE</span>
+          <h2 class="section-title">Test My Skills in Real-Time</h2>
+          <p class="section-desc">Run live simulated penetration testing scans, automated regression suites, or query my
+            technical qualifications directly from the terminal console below.</p>
+        </div>
+
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="t-btn t-close"></span>
+              <span class="t-btn t-min"></span>
+              <span class="t-btn t-max"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="fa-solid fa-lock"></i> abhishek-os@cyber-lab:~ (v2.6.4)
+            </div>
+            <div style="width: 40px;"></div>
+          </div>
+
+          <div id="terminal-body" class="terminal-body">
+            <div class="terminal-output">
+              <div class="out-success">======================================================================</div>
+              <div class="out-info">🚀 Welcome to AbhishekOS Interactive Terminal v2.6.4</div>
+              <div class="text-muted">Type <span class="out-cyan font-mono">help</span> or click the quick action chips
+                below to execute commands.</div>
+              <div class="out-success">======================================================================</div>
+            </div>
+          </div>
+
+          <div class="terminal-quick-chips">
+            <span class="quick-chip-label">Quick Run:</span>
+            <button class="quick-chip" data-cmd="run-pentest"><i class="fa-solid fa-bug"></i> run-pentest</button>
+            <button class="quick-chip" data-cmd="run-qa-suite"><i class="fa-solid fa-bolt"></i> run-qa-suite</button>
+            <button class="quick-chip" data-cmd="whoami"><i class="fa-solid fa-user"></i> whoami</button>
+            <button class="quick-chip" data-cmd="skills"><i class="fa-solid fa-code"></i> skills</button>
+            <button class="quick-chip" data-cmd="projects"><i class="fa-solid fa-folder-open"></i> projects</button>
+            <button class="quick-chip" data-cmd="download-cv"><i class="fa-solid fa-download"></i> download-cv</button>
+            <button class="quick-chip" data-cmd="contact"><i class="fa-solid fa-envelope"></i> contact</button>
+            <button class="quick-chip" data-cmd="clear"><i class="fa-solid fa-trash"></i> clear</button>
+          </div>
+
+          <div class="terminal-header"
+            style="border-top: 1px solid var(--border-subtle); border-bottom: none; padding: 0.85rem 1.25rem;">
+            <div class="terminal-input-row" style="width: 100%;">
+              <span class="terminal-prompt">guest@abhishek-os:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input"
+                placeholder="Type a command (e.g. run-pentest, whoami, help)..." autocomplete="off" spellcheck="false">
+            </div>
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Dhanbad , Jharkhand</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p>
-                <a href="tel://7470695586">+91 834-033-1293</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
-              <p>
-                <a href="mailto:devnathanurag7.com">abhishekmandaal669@gmail.com</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">Download Resume</h3>
-              <p>
-                <a href="https://drive.google.com/file/d/13uqiaZ_Hxr5PibEDy0gb1onXkemn2uw7/view?usp=sharing">resumelink</a>
-              </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CORE DOMAINS & EXPERTISE (BENTO GRID)
+         ========================================== -->
+    <section id="domains" class="bento-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes"></i> CORE SPECIALIZATIONS</span>
+          <h2 class="section-title">Domains & Engineering Pillars</h2>
+          <p class="section-desc">Delivering end-to-end software quality assurance and offensive security auditing for
+            mission-critical web applications and enterprise systems.</p>
+        </div>
+
+        <div class="bento-grid">
+
+          <!-- Bento 1: Web App Penetration Testing -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>Web Application Penetration Testing (VAPT)</h3>
+            <p>
+              Auditing web applications against the <strong>OWASP Top 10</strong> vulnerabilities. Skilled in
+              intercepting and manipulating HTTP/HTTPS traffic with <strong>Burp Suite Pro</strong> to uncover Broken
+              Object Level Authorization (BOLA), SQL Injection, XSS, CSRF, and authentication bypass flaws.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag">OWASP Top 10</span>
+              <span class="bento-tag">Burp Suite</span>
+              <span class="bento-tag">Vulnerability Assessment</span>
+              <span class="bento-tag">Auth Bypass</span>
+              <span class="bento-tag">Security Remediation</span>
             </div>
           </div>
 
-          <div class="container">
-            <!-- <br>
-            <br>
-            <div class="row justify-content-center">
-              <div class="col-md-7 ftco-animate text-center">
-                <h2>Have a<span>
-                    Question?
-                  </span>
-                </h2>
-                <div class="que" id="send-message">
-                  <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="53850583-f0df-4410-b578-7dcc38204284">
-                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                      <div class="col-12">
-                        <label for="fullname" class="form-label">Full Name
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="email" class="form-label">Email
-                          <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
-                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                            </svg>
-                          </span>
-                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
-                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                            </svg>
-                          </span>
-                          <input type="tel" class="form-control" id="phone" name="phone" value="">
-                        </div>
-                      </div><br>
-                      <div class="col-12">
-                        <label for="subject" class="form-label">Subject
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
-                      </div>
-                      <div class="col-12">
-                        <label for="message" class="form-label">Message
-                          <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-grid"><br>
-                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+          <!-- Bento 2: Automation Testing -->
+          <div class="bento-card">
+            <div class="bento-icon emerald"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Test Automation & Frameworks</h3>
+            <p>
+              Designing scalable automation test scripts using <strong>Playwright with JavaScript</strong> and
+              <strong>Selenium WebDriver with Java / TestNG</strong>. Experienced with the <strong>Page Object Model (POM)</strong> for reusable smoke
+              and regression test suites, cutting repetitive manual regression time by ~30%.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag">Playwright (JS)</span>
+              <span class="bento-tag">Selenium Java</span>
+              <span class="bento-tag">TestNG</span>
+              <span class="bento-tag">POM Pattern</span>
+              <span class="bento-tag">Regression Automation</span>
+            </div>
+          </div>
+
+          <!-- Bento 3: API Testing & Security -->
+          <div class="bento-card">
+            <div class="bento-icon purple"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>REST API Testing & Verification</h3>
+            <p>
+              Extensive testing of RESTful API endpoints using <strong>Postman</strong>. Crafting automated assertion
+              suites for status code validation, JSON schema integrity, OAuth/JWT token security, and parameter boundary
+              testing.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag">Postman</span>
+              <span class="bento-tag">REST API v1.1</span>
+              <span class="bento-tag">Auth Tokens</span>
+              <span class="bento-tag">Schema Validation</span>
+            </div>
+          </div>
+
+          <!-- Bento 4: Windows Desktop Validation -->
+          <div class="bento-card col-span-2">
+            <div class="bento-icon"><i class="fa-brands fa-windows"></i></div>
+            <h3>Windows Desktop & Native OS Validation</h3>
+            <p>
+              Deep expertise in desktop client validation across Windows 10 & 11. Validating installer/uninstaller
+              registry keys, analyzing <strong>Windows Event Viewer logs</strong> and Task Manager resource metrics to
+              isolate background process errors, system tray behaviors, and shell extension menu context hooks.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag">Windows Registry</span>
+              <span class="bento-tag">Event Viewer Logs</span>
+              <span class="bento-tag">Shell Extensions</span>
+              <span class="bento-tag">Installer Verification</span>
+              <span class="bento-tag">Win 10/11 UI Hooks</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECURITY ARSENAL & TECH STACK
+         ========================================== -->
+    <section id="arsenal" class="arsenal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-toolbox"></i> TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Tools, Frameworks & Technologies</h2>
+          <p class="section-desc">Comprehensive toolset utilized for manual inspection, test automation pipelines,
+            security scanning, and backend data integrity.</p>
+        </div>
+
+        <div class="arsenal-tabs">
+          <button class="arsenal-tab active" data-filter="all">All Weapons</button>
+          <button class="arsenal-tab" data-filter="security">Security & Pentest</button>
+          <button class="arsenal-tab" data-filter="qa">QA & Automation</button>
+          <button class="arsenal-tab" data-filter="os">OS & Desktop</button>
+          <button class="arsenal-tab" data-filter="languages">Languages & DB</button>
+        </div>
+
+        <div class="arsenal-grid">
+
+          <!-- Security -->
+          <div class="skill-card" data-category="security">
+            <div class="skill-icon"><i class="fa-solid fa-spider"></i></div>
+            <div class="skill-info">
+              <h4>Burp Suite Pro</h4>
+              <span>Proxy, Repeater, Intruder & VAPT</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="security">
+            <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="skill-info">
+              <h4>OWASP Top 10</h4>
+              <span>Web App Vulnerability Assessment</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="security">
+            <div class="skill-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <div class="skill-info">
+              <h4>Nmap & Wireshark</h4>
+              <span>Port Scanning & Packet Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="security">
+            <div class="skill-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+            <div class="skill-info">
+              <h4>SCADA & Network Security</h4>
+              <span>Access Control, Firewalls, Patch Validation</span>
+            </div>
+          </div>
+
+          <!-- QA & Automation -->
+          <div class="skill-card" data-category="qa">
+            <div class="skill-icon" style="color: var(--cyber-emerald);"><i class="fa-solid fa-masks-theater"></i></div>
+            <div class="skill-info">
+              <h4>Playwright (JavaScript)</h4>
+              <span>E2E Modern Web Automation & API Assertions</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="qa">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="skill-info">
+              <h4>Selenium WebDriver</h4>
+              <span>Java UI Automation & Cross-Browser</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="qa">
+            <div class="skill-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <div class="skill-info">
+              <h4>TestNG Framework</h4>
+              <span>Annotations, Assertions, Parallel Runs</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="qa">
+            <div class="skill-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div class="skill-info">
+              <h4>Postman</h4>
+              <span>REST API Automation & Auth Testing</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="qa">
+            <div class="skill-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <div class="skill-info">
+              <h4>JIRA</h4>
+              <span>Defect Tracking & Bug Lifecycle (STLC)</span>
+            </div>
+          </div>
+
+          <!-- OS & Desktop -->
+          <div class="skill-card" data-category="os">
+            <div class="skill-icon"><i class="fa-brands fa-windows"></i></div>
+            <div class="skill-info">
+              <h4>Windows Registry & Logs</h4>
+              <span>Key Validation & Event Viewer Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="os">
+            <div class="skill-icon"><i class="fa-solid fa-box-open"></i></div>
+            <div class="skill-info">
+              <h4>Installer Testing</h4>
+              <span>Clean Installation & Uninstall Cleanup</span>
+            </div>
+          </div>
+
+          <!-- Languages & DB -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-info">
+              <h4>Java</h4>
+              <span>OOP & Test Script Development</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <span>Scripting & Automation Utilities</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-info">
+              <h4>SQL</h4>
+              <span>Backend Data Validation & Queries</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="skill-info">
+              <h4>Git & GitHub</h4>
+              <span>Version Control & CI/CD Pipelines</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS & LABS
+         ========================================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-flask-vial"></i> EVIDENCE-BACKED CASE STUDIES</span>
+          <h2 class="section-title">Featured Projects & Security Audits</h2>
+          <p class="section-desc">Practical demonstrations of manual testing, automation suites, and vulnerability
+            research.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Justo Delivery -->
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-badge"><i class="fa-solid fa-truck-fast"></i> Enterprise QA & Security</span>
+              <div class="project-links">
+                <a href="https://github.com/abhishekmandal669" target="_blank" class="project-link-btn"
+                  title="GitHub"><i class="fa-brands fa-github"></i></a>
               </div>
-            </div> -->
-            <br>
-            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-              <li class="ftco-animate normal-txt">Find me on
-              </li>
-             
-              <li class="ftco-animate">
-                <a href="https://www.linkedin.com/in/abhishek-mandal-a9b714214/">
-                  <span class="icon-linkedin"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://wa.me/8340331293">
-                  <span class="icon-whatsapp"></span></a>
-              </li>
-              
-              <li class="ftco-animate">
-                <a href="https://www.instagram.com/mandal_abhishek669/">
-                  <span class="icon-instagram"></span></a>
+            </div>
+            <h3>Justo Delivery — Logistics & Transportation Platform</h3>
+            <p>Comprehensive manual and functional QA testing of a multi-role logistics management platform spanning
+              quote creation, warehouse operations, dispatch, and delivery workflows across 3 user roles.</p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> Executed API testing on 15+ endpoints with Postman for RESTful API
+                v1.1.</li>
+              <li><i class="fa-solid fa-check"></i> Conducted OWASP Top 10 vulnerability checks with Burp Suite on auth
+                flows.</li>
+              <li><i class="fa-solid fa-check"></i> Tracked and resolved 25+ defects in JIRA across 8+ deployment
+                cycles.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="hero-tag">PHP/Laravel</span>
+              <span class="hero-tag">Vue 3 / Vite</span>
+              <span class="hero-tag">Postman</span>
+              <span class="hero-tag">Burp Suite</span>
+              <span class="hero-tag">JIRA</span>
+            </div>
+          </div>
+
+          <!-- Project 2: SCADA Security Assessment -->
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-badge security"><i class="fa-solid fa-shield-halved"></i> Vulnerability Audit</span>
+              <div class="project-links">
+                <a href="https://github.com/abhishekmandal669" target="_blank" class="project-link-btn"
+                  title="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3>SCADA & Industrial Platform Security Assessment</h3>
+            <p>Evaluated network security parameters, backdoor access controls, and data transmission workflows for an
+              industrial logistics and dispatch architecture.</p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> Uncovered unencrypted API hooks and unauthorized access pathways via
+                Burp Suite.</li>
+              <li><i class="fa-solid fa-check"></i> Validated database query integrity using SQL & verified system
+                backup scripts.</li>
+              <li><i class="fa-solid fa-check"></i> Documented 25+ security findings and remediation guidance in JIRA.
               </li>
             </ul>
-            <br>
+            <div class="project-tech">
+              <span class="hero-tag">Burp Suite</span>
+              <span class="hero-tag">Nmap</span>
+              <span class="hero-tag">SQL</span>
+              <span class="hero-tag">Windows Registry</span>
+              <span class="hero-tag">IEC 62443 Standards</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Selenium Java Automation -->
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-badge automation"><i class="fa-solid fa-robot"></i> Test Automation</span>
+              <div class="project-links">
+                <a href="https://github.com/abhishekmandal669" target="_blank" class="project-link-btn"
+                  title="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Selenium Java & TestNG Web Automation Framework</h3>
+            <p>Architected a modular Page Object Model (POM) automated test framework for web login portals and core
+              enterprise transaction flows.</p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> Automated primary smoke and regression test suites reducing manual
+                effort by 30%.</li>
+              <li><i class="fa-solid fa-check"></i> Integrated TestNG data-driven testing for multi-user authentication
+                scenarios.</li>
+              <li><i class="fa-solid fa-check"></i> Implemented cross-browser execution with clean failure screenshots
+                and logs.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="hero-tag">Selenium WebDriver</span>
+              <span class="hero-tag">Java</span>
+              <span class="hero-tag">TestNG</span>
+              <span class="hero-tag">Maven</span>
+              <span class="hero-tag">POM Pattern</span>
+            </div>
+          </div>
+
+          <!-- Project 4: REST API Security Suite -->
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-badge"><i class="fa-solid fa-network-wired"></i> API Automation</span>
+              <div class="project-links">
+                <a href="https://github.com/abhishekmandal669" target="_blank" class="project-link-btn"
+                  title="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3>REST API Security & Automation Testing Suite</h3>
+            <p>Engineered comprehensive Postman API collections with automated assertions covering negative testing,
+              token tampering, and schema validation.</p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> Validated 20+ API endpoints with environment variables and dynamic
+                tokens.</li>
+              <li><i class="fa-solid fa-check"></i> Tested for Broken Object Level Authorization (BOLA) and
+                rate-limiting limits.</li>
+              <li><i class="fa-solid fa-check"></i> Automated CI/CD test execution with Newman for regression
+                verification.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="hero-tag">Postman</span>
+              <span class="hero-tag">JavaScript</span>
+              <span class="hero-tag">JSON Schema</span>
+              <span class="hero-tag">OAuth / JWT</span>
+              <span class="hero-tag">Newman</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE & EDUCATION TIMELINE
+         ========================================== -->
+    <section id="experience" class="timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-timeline"></i> TRACK RECORD</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-desc">Hands-on industry experience in software testing combined with strong computer science
+            engineering fundamentals.</p>
+        </div>
+
+        <div class="timeline-grid">
+
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <h3><i class="fa-solid fa-briefcase text-cyan"></i> Professional Experience</h3>
+            <div class="timeline-list">
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Aug 2026 – Present (Full-Time)</span>
+                <h4>QA Software Testing Engineer</h4>
+                <div class="timeline-org">Oriental Outsourcing Consultant Private Limited | India</div>
+                <ul>
+                  <li>Executed manual & automated testing across 15+ web & Windows desktop builds.</li>
+                  <li>Built Selenium Java + TestNG automation scripts reducing manual regression by 30%.</li>
+                  <li>Validated 10+ desktop installer packages, Windows Registry keys, and Event Viewer logs.</li>
+                  <li>Tracked 80+ defects in JIRA and performed API testing on 20+ endpoints with Postman.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Dec 2025 – Jul 2026 (8 Months)</span>
+                <h4>QA Software Testing Intern</h4>
+                <div class="timeline-org">Oriental Outsourcing Consultant Private Limited | India</div>
+                <ul>
+                  <li>Assisted in manual testing of 10+ builds, learning STLC and bug lifecycle under senior QA.</li>
+                  <li>Authored and executed 30+ test cases; logged defects with reproduction logs in JIRA.</li>
+                  <li>Introduced to Burp Suite for basic OWASP Top 10 security checks.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column">
+            <h3><i class="fa-solid fa-graduation-cap text-emerald"></i> Education & Certifications</h3>
+            <div class="timeline-list">
+
+              <div class="timeline-item">
+                <span class="timeline-dot"
+                  style="border-color: var(--cyber-emerald); box-shadow: 0 0 10px var(--cyber-emerald);"></span>
+                <span class="timeline-date">2022 – 2026</span>
+                <h4>Bachelor of Technology (B.Tech) in CSE</h4>
+                <div class="timeline-org">Swami Vivekanand Institute of Engineering and Technology (SVIET)</div>
+                <p><strong>CGPA: 8.5</strong> | First Class Distinction. Strong foundation in Software Engineering, Data
+                  Structures, Operating Systems, and Network Security.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"
+                  style="border-color: var(--cyber-emerald); box-shadow: 0 0 10px var(--cyber-emerald);"></span>
+                <span class="timeline-date">2020 – 2022</span>
+                <h4>Higher Secondary School (ISC)</h4>
+                <div class="timeline-org">DE Nobili School, CMRI (Dhanbad)</div>
+                <p>First Class Distinction. Science & Computer Applications.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"
+                  style="border-color: var(--cyber-purple); box-shadow: 0 0 10px var(--cyber-purple);"></span>
+                <span class="timeline-date">Verified Credentials</span>
+                <h4>Professional Certifications</h4>
+                <div class="timeline-org">Industry Recognized</div>
+                <ul>
+                  <li><strong>Automation Testing</strong> — GeeksforGeeks (GfG)</li>
+                  <li><strong>Cybersecurity</strong> — Tutedude (In Progress)</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         METRICS & TRUST SIGNALS
+         ========================================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+
+          <div class="metric-box">
+            <div class="metric-number">15+</div>
+            <div class="metric-label">Web & Desktop Builds Tested</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-number">80+</div>
+            <div class="metric-label">Defects Documented in JIRA</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-number">30%</div>
+            <div class="metric-label">Regression Time Saved via Automation</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-number">8.5</div>
+            <div class="metric-label">B.Tech CSE Distinction CGPA</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-headset"></i> TRANSMISSION CHANNEL</span>
+          <h2 class="section-title">Get In Touch & Hire Me</h2>
+          <p class="section-desc">Open for full-time QA Engineering roles, Penetration Testing engagements, and security
+            audits.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Direct Contact Cards -->
+          <div class="contact-info-cards">
+
+            <a href="https://wa.me/8340331293" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-card-info">
+                <h4>WhatsApp & Direct Call</h4>
+                <p>+91 834-033-1293</p>
+              </div>
+            </a>
+
+            <a href="mailto:abhishekmandal669@gmail.com" class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-info">
+                <h4>Official Email Address</h4>
+                <p>abhishekmandal669@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/abhishek-mandal-a9b714214" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-card-info">
+                <h4>LinkedIn Professional Profile</h4>
+                <p>linkedin.com/in/abhishek-mandal</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/abhishekmandal669" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-card-info">
+                <h4>GitHub Repositories & Tests</h4>
+                <p>github.com/abhishekmandal669</p>
+              </div>
+            </a>
+
+            <div class="contact-card" style="cursor: default;">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-info">
+                <h4>Current Location</h4>
+                <p>Dhanbad, Jharkhand, India</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Web3Forms Contact Form -->
+          <div class="contact-form-container">
+            <form id="cyber-contact-form" class="contact-form">
+              <input type="hidden" name="access_key" value="53850583-f0df-4410-b578-7dcc38204284">
+              <input type="hidden" name="subject" value="New Portfolio Inquiry for Abhishek Mandal">
+              <input type="checkbox" name="botcheck" style="display: none;">
+
+              <div class="form-group">
+                <label for="name">Your Name / Organization *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Alex Morgan / TechCorp"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="alex@techcorp.com"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Inquiry Type</label>
+                <select id="service" name="service" class="form-control">
+                  <option value="QA Automation Role">QA Software Automation Role</option>
+                  <option value="Penetration Testing / VAPT">Penetration Testing & VAPT Audit</option>
+                  <option value="API Testing Engagement">REST API Testing Engagement</option>
+                  <option value="General Consultation">General Discussion / Consulting</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details / Message *</label>
+                <textarea id="message" name="message" class="form-control" rows="4"
+                  placeholder="Describe the role or project scope..." required></textarea>
+              </div>
+
+              <div id="form-status" class="form-status"></div>
+
+              <button type="submit" class="cyber-btn btn-cyan" style="width: 100%; padding: 0.85rem;">
+                <i class="fa-solid fa-paper-plane"></i> Transmit Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FUTURISTIC FOOTER
+         ========================================== -->
+    <footer class="cyber-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="nav-brand">
+              <span class="brand-badge"><i class="fa-solid fa-shield-halved"></i> AM//SEC</span>
+              <span>Abhishek Kumar Mandal</span>
+            </span>
+            <p>QA Automation Engineer & Penetration Testing Specialist</p>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://linkedin.com/in/abhishek-mandal-a9b714214" target="_blank" class="footer-social-link"
+              title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/abhishekmandal669" target="_blank" class="footer-social-link" title="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/8340331293" target="_blank" class="footer-social-link" title="WhatsApp"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:abhishekmandal669@gmail.com" class="footer-social-link" title="Email"><i
+                class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
-      </section>
-
-     
-
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
       </div>
+    </footer>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/scrollax.min.js"></script>
+  </div>
 
-      <script src="js/main.js"></script>
-      
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Custom Cyber Engine -->
+  <script src="js/cyber-core.js"></script>
 
-    </body>
+</body>
 
-  </html>
+</html>
