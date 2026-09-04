@@ -455,12 +455,16 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .avatar-meta-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .avatar-meta-title h3 {
@@ -476,6 +480,7 @@ body::before {
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   border: 1px solid rgba(0, 255, 136, 0.2);
+  white-space: nowrap;
 }
 
 .avatar-meta p {
@@ -486,27 +491,29 @@ body::before {
 /* Floating Badges */
 .floating-stat {
   position: absolute;
-  background: rgba(10, 16, 32, 0.85);
+  background: rgba(10, 16, 32, 0.9);
   border: 1px solid var(--border-cyan);
   padding: 0.6rem 1rem;
   border-radius: 12px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .floating-stat.stat-1 {
-  top: -15px;
-  left: -20px;
+  top: 25px;
+  left: -35px;
   border-color: rgba(0, 242, 255, 0.4);
 }
 
 .floating-stat.stat-2 {
-  bottom: 20px;
-  right: -25px;
+  bottom: 85px;
+  right: -35px;
   border-color: rgba(0, 255, 136, 0.4);
 }
 
@@ -1333,8 +1340,29 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (ALL DEVICES & VIEWPORTS)
    ========================================================================== */
+
+/* Tablets & Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    gap: 2rem;
+  }
+  .floating-stat.stat-1 {
+    left: -15px;
+  }
+  .floating-stat.stat-2 {
+    right: -15px;
+  }
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-card.col-span-2 {
+    grid-column: span 2;
+  }
+}
+
+/* Tablets (<= 992px) */
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1366,7 +1394,14 @@ textarea.form-control {
   }
 }
 
+/* Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .cyber-nav {
+    padding: 0.5rem 1rem;
+  }
   .nav-links {
     display: none;
   }
@@ -1376,21 +1411,95 @@ textarea.form-control {
   .cyber-nav.mobile-open .nav-links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: var(--bg-secondary);
+    background: rgba(10, 16, 32, 0.98);
     border: 1px solid var(--border-cyan);
-    border-radius: 16px;
-    padding: 1.5rem;
+    border-radius: 20px;
+    padding: 1.25rem;
     margin-top: 0.5rem;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+    gap: 0.5rem;
+  }
+  .cyber-nav.mobile-open .nav-links li {
+    width: 100%;
+  }
+  .cyber-nav.mobile-open .nav-links a {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .avatar-card {
+    max-width: 340px;
+    padding: 1.25rem;
+  }
+  .avatar-img-wrapper {
+    height: 320px;
   }
   .floating-stat {
     display: none;
   }
+  .terminal-body {
+    padding: 1rem;
+    min-height: 320px;
+    font-size: 0.8rem;
+  }
+  .terminal-quick-chips {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0.65rem 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .quick-chip {
+    flex-shrink: 0;
+  }
+  .bento-card, .project-card, .timeline-item, .contact-form-container {
+    padding: 1.5rem;
+  }
+  .arsenal-grid {
+    grid-template-columns: 1fr;
+  }
   .metrics-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+}
+
+/* Extra Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cyber-btn {
+    width: 100%;
+  }
+  .avatar-card {
+    max-width: 100%;
+  }
+  .avatar-img-wrapper {
+    height: 290px;
+  }
+  .contact-form-container {
+    padding: 1.25rem;
   }
 }
